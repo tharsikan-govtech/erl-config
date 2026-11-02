@@ -26,9 +26,6 @@
     "fuelType": "${fuelType}",
     "engineCapacityCc": ${engineCapacityCc},
     "colour": "${colour}",
-    "province": "${province}",
-    "claim169": {
-      "identityQRCode": "$claim_169_values[0]"
-    }
+    "province": "${province}"
   }
 }

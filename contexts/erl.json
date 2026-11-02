@@ -27,15 +27,6 @@
     "fuelType": "erl:fuelType",
     "engineCapacityCc": { "@id": "erl:engineCapacityCc", "@type": "xsd:integer" },
     "colour": "erl:colour",
-    "province": "erl:province",
-
-    "claim169": {
-      "@id": "erl:claim169",
-      "@context": {
-        "@version": 1.1,
-        "@protected": true,
-        "identityQRCode": "erl:identityQRCode"
-      }
-    }
+    "province": "erl:province"
   }
 }

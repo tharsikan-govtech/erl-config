@@ -9,7 +9,7 @@ Static files and Certify configuration for the sample e-Revenue Licence VC. Mean
 | `certify/erl-vc-template.vm` | Velocity template of the VC (readable source) |
 | `certify/erl-credential-config.json` | Body for Certify `POST /credential-configurations`. Generated: `node scripts/build-credential-config.js` |
 
-The VC is `ldp_vc`, signed `Ed25519Signature2020`, type `RevenueLicenceCredential`, with a signed Claim 169 style QR (`claim169.identityQRCode`) holding the licence number, vehicle number and dates. The 17 claims in the credential config are exactly what `erl-sample-api` sends to `POST /pre-authorized-data`; change one side and the other must follow, because Certify rejects unknown claims.
+The VC is `ldp_vc`, signed `Ed25519Signature2020`, type `RevenueLicenceCredential`. There is no Claim 169 QR: a vehicle licence has no identity fields, so only the `ID` key would map. The 17 claims in the credential config are exactly what `erl-sample-api` sends to `POST /pre-authorized-data`; change one side and the other must follow, because Certify rejects unknown claims.
 
 ## Steps
 

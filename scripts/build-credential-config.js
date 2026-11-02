@@ -39,11 +39,6 @@ const config = {
   ],
   scope: "erl_vc_ldp",
   claims,
-  // One signed Claim 169 style QR. Only "ID" is a Claim 169 key; the rest are plain text keys
-  // that PixelPass passes through unchanged.
-  qrSettings: [{
-    ID: "${licenceNumber}", vehicleNumber: "${vehicleNumber}", issueDate: "${issueDate}", expiryDate: "${expiryDate}",
-  }],
 };
 
 const out = path.join(root, "certify", "erl-credential-config.json");
