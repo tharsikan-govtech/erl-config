@@ -8,6 +8,10 @@ Static files and Certify configuration for the sample e-Revenue Licence VC. Mean
 | `did/did.json` | Issuer DID document, `.../did/did.json` = `did:web:tharsikan-govtech.github.io:erl-config:did`. Holds the public key of the Certify instance that signs the VCs |
 | `certify/erl-vc-template.vm` | Velocity template of the VC (readable source) |
 | `certify/erl-credential-config.json` | Body for Certify `POST /credential-configurations`. Generated: `node scripts/build-credential-config.js` |
+| `pki/root.pem`, `pki/issuer-ca.pem`, `pki/dsc.pem` | Public certificates of the sample CA chain: Root CA → Issuer Sub-CA → signing certificate (for the key in `did/did.json`). Made by `../erl-ca`. A verifier must pin `root.pem` itself, never trust this copy blindly |
+| `registry/trust-registry.json` | Trust registry: issuer id, allowed credential types, the signing key and its chain (`x5c`). Unsigned sample. Made by `../erl-ca/build-registry.mjs` |
+
+The CA private keys are **not** here; they stay in `../erl-ca/pki` (git-ignored). Root CA SHA-256 fingerprint: see `registry/trust-registry.json`, `trustAnchors`.
 
 The VC is `ldp_vc`, signed `Ed25519Signature2020`, type `RevenueLicenceCredential`. There is no Claim 169 QR: a vehicle licence has no identity fields, so only the `ID` key would map. The 17 claims in the credential config are exactly what `erl-sample-api` sends to `POST /pre-authorized-data`; change one side and the other must follow, because Certify rejects unknown claims.
 

@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "issuedAt": "2026-11-02T10:35:13.202Z",
+  "nextUpdate": "2026-11-09T10:35:13.203Z",
+  "trustAnchors": [
+    {
+      "id": "sample-erl-root",
+      "sha256": "70:67:90:4D:F2:B2:F8:BB:76:DC:35:2F:52:A7:C8:93:CC:F5:B2:63:92:BB:55:65:EC:CA:F8:DC:32:21:39:90"
+    }
+  ],
+  "issuers": [
+    {
+      "issuerId": "did:web:tharsikan-govtech.github.io:erl-config:did",
+      "status": "active",
+      "credentialTypes": [
+        "RevenueLicenceCredential"
+      ],
+      "sanDns": [
+        "tharsikan-govtech.github.io"
+      ],
+      "verificationMethods": [
+        {
+          "id": "did:web:tharsikan-govtech.github.io:erl-config:did#GE8yha31H8E_Bi3h1nX1f8tG82EtIVmhH_giSihrv54",
+          "type": "Ed25519VerificationKey2020",
+          "publicKeyMultibase": "z6MkmD3Et3axR6tahYUpubTZtWVG3v5bUhVR95sWE3ruxwyH",
+          "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAZF0ytrtlmHznNqkJKNU8/Ewh8Wrvn4ACY60Dmjd+UdA=\n-----END PUBLIC KEY-----\n",
+          "x5c": [
+            "MIICCzCCAb2gAwIBAgIULL4dbqGzYYMFxI1+2XBi/257gIEwBQYDK2VwMGExCzAJBgNVBAYTAkxLMS8wLQYDVQQKDCZTYW1wbGUgUmV2ZW51ZSBMaWNlbmNlIFRydXN0IEF1dGhvcml0eTEhMB8GA1UEAwwYU2FtcGxlIGVSTCBJc3N1ZXIgU3ViLUNBMB4XDTI2MTEwMjEwMzMxMVoXDTI3MTEwMjEwMzMxMVowXjELMAkGA1UEBhMCTEsxKTAnBgNVBAoMIFNhbXBsZSBSZXZlbnVlIExpY2VuY2UgQXV0aG9yaXR5MSQwIgYDVQQDDBt0aGFyc2lrYW4tZ292dGVjaC5naXRodWIuaW8wKjAFBgMrZXADIQBkXTK2u2WYfOc2qQko1Tz8TCHxau+fgAJjrQOaN35R0KOBiTCBhjAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDAmBgNVHREEHzAdght0aGFyc2lrYW4tZ292dGVjaC5naXRodWIuaW8wHQYDVR0OBBYEFHF38fxioqbxs4+AFQarqi2SRY5LMB8GA1UdIwQYMBaAFJN9n354N8IWZJZ32NgfxuDXHQVwMAUGAytlcANBAHdEixemvy/JAoGx6HTRmfUDO28+mqS2Sszsqqn0YW6juijfkNFcMvvm3XfHFB+6hS9YIWeNb8b2dUo6U/ggsAA=",
+            "MIIB5DCCAZagAwIBAgIUe639D6bYiLbcpDeoLfqa7ODjSREwBQYDK2VwMFsxCzAJBgNVBAYTAkxLMS8wLQYDVQQKDCZTYW1wbGUgUmV2ZW51ZSBMaWNlbmNlIFRydXN0IEF1dGhvcml0eTEbMBkGA1UEAwwSU2FtcGxlIGVSTCBSb290IENBMB4XDTI2MTEwMjEwMzMxMVoXDTMxMTEwMTEwMzMxMVowYTELMAkGA1UEBhMCTEsxLzAtBgNVBAoMJlNhbXBsZSBSZXZlbnVlIExpY2VuY2UgVHJ1c3QgQXV0aG9yaXR5MSEwHwYDVQQDDBhTYW1wbGUgZVJMIElzc3VlciBTdWItQ0EwKjAFBgMrZXADIQD1NbD/VNehuZh6aADCDXb/pDREgmjIYz5dBTl9tWYp5aNmMGQwEgYDVR0TAQH/BAgwBgEB/wIBADAOBgNVHQ8BAf8EBAMCAQYwHQYDVR0OBBYEFJN9n354N8IWZJZ32NgfxuDXHQVwMB8GA1UdIwQYMBaAFF2edUCQinz4RadHg67uoG1UvuC9MAUGAytlcANBANQ6h5rDRy8Tf7fs2gP7qKwWVj5jtUfWEjaedBzZpKjysTbxHuUeHgsVP/gwfby2jJxtRrK28BTBLBkTQDidSgI="
+          ]
+        }
+      ]
+    }
+  ],
+  "revokedCertSha256": []
+}
