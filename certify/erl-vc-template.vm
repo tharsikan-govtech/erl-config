@@ -1,3 +1,7 @@
+#set($holderDid = $_holderId)
+#if($_holderId.contains("#"))
+#set($holderDid = $_holderId.substring(0, $_holderId.indexOf("#")))
+#end
 {
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
@@ -9,7 +13,7 @@
   "issuanceDate": "${validFrom}",
   "expirationDate": "${expiryDate}T23:59:59.000Z",
   "credentialSubject": {
-    "id": "${_holderId}",
+    "id": "${holderDid}",
     "licenceNumber": "${licenceNumber}",
     "receiptNumber": "${receiptNumber}",
     "issuingAuthority": "${issuingAuthority}",
