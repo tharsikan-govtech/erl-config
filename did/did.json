@@ -6,9 +6,9 @@
   "id": "did:web:tharsikan-govtech.github.io:erl-config:did",
   "verificationMethod": [
     {
-      "publicKeyMultibase": "z6MkmD3Et3axR6tahYUpubTZtWVG3v5bUhVR95sWE3ruxwyH",
+      "publicKeyMultibase": "z6MkimM3UMQbdPQcA8dUkDQLjJGJjizBPUXWod2fMJsLZNGk",
       "controller": "did:web:tharsikan-govtech.github.io:erl-config:did",
-      "id": "did:web:tharsikan-govtech.github.io:erl-config:did#GE8yha31H8E_Bi3h1nX1f8tG82EtIVmhH_giSihrv54",
+      "id": "did:web:tharsikan-govtech.github.io:erl-config:did#J0HN5PVrz-qtYRHpvVwWZpNWYy0SfOmUm82f0ezgDAc",
       "type": "Ed25519VerificationKey2020"
     }
   ],
